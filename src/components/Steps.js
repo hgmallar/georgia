@@ -328,8 +328,8 @@ export default function SimpleTabs() {
             </ListItemIcon>
             <ListItemText>
               Absentee ballots can be delivered either by U.S. first class mail
-              or hand delivered by the voter. If mailing, you must affix postage
-              to the ballot envelope.
+              or hand delivered by the voter to their county registrar’s office.
+              If mailing, you must affix postage to the ballot envelope.
             </ListItemText>
           </ListItem>
         </List>
@@ -343,6 +343,27 @@ export default function SimpleTabs() {
             className={classes.buttons}
           >
             Georgia Absentee Voting Guide
+          </Button>
+        </Link>
+        <Link
+          href="https://elections.sos.ga.gov/Elections/countyregistrars.do"
+          target="_blank"
+        >
+          <Button
+            variant="outlined"
+            color="secondary"
+            className={classes.buttons}
+          >
+            Find County Board of Registrars Offices
+          </Button>
+        </Link>
+        <Link href="https://gaballotdropbox.org/" target="_blank">
+          <Button
+            variant="outlined"
+            color="secondary"
+            className={classes.buttons}
+          >
+            Find Ballot Dropboxes
           </Button>
         </Link>
         <Link href="https://www.mvp.sos.ga.gov/MVP/mvp.do" target="_blank">
