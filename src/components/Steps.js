@@ -46,9 +46,12 @@ function a11yProps(index) {
 
 const useStyles = makeStyles({
   root: {
+    fontFamily: `'Oxygen', sans-serif`,
     flexGrow: 1,
     backgroundColor: "#3C3B6E",
     color: "#EEE",
+    textAlign: "center",
+    paddingBottom: "50px",
   },
   tabs: {
     backgroundColor: "#B22234",
@@ -81,7 +84,11 @@ export default function SimpleTabs() {
         >
           <Tab className={classes.tab} label="Registration" {...a11yProps(0)} />
           <Tab className={classes.tab} label="Vote By Mail" {...a11yProps(1)} />
-          <Tab className={classes.tab} label="Vote In Person" {...a11yProps(2)} />
+          <Tab
+            className={classes.tab}
+            label="Vote In Person"
+            {...a11yProps(2)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

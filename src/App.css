@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -26,6 +26,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: #b22234 !important;
 }
 
 @keyframes App-logo-spin {
