@@ -3,7 +3,7 @@ const app = express();
 require("dotenv").config();
 const morgan = require("morgan");
 const nodemailer = require("nodemailer");
-const path = require("path"); 
+const path = require("path");
 
 app.use(morgan("dev"));
 
@@ -20,5 +20,5 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-const PORT = process.env.PORT || 8080
-app.listen(PORT, () => console.info(`server has started on ${PORT}`))
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.info(`server has started on ${PORT}`));
