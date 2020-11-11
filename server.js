@@ -3,7 +3,6 @@ const app = express();
 require("dotenv").config();
 const morgan = require("morgan");
 const nodemailer = require("nodemailer");
-const port = process.env.PORT || 4444;
 const path = require("path"); 
 
 app.use(morgan("dev"));
@@ -21,6 +20,5 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(port, () => {
-  console.log(`app is live on ${port}`);
-});
+const PORT = process.env.PORT || 8080
+app.listen(PORT, () => console.info(`server has started on ${PORT}`))
