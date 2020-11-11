@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.MuiFormLabel-root {
+  color: #eee !important;
+  border-color: #eee !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #b22234 !important;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+  text-align: left !important;
+}
+
+.MuiSelect-icon {
+  color: #eee !important;
+}
+
+.MuiInputBase-input {
+  color: #eee !important;
+}
+
 .MuiBottomNavigationAction-root.Mui-selected {
   color: #b22234 !important;
 }

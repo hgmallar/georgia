@@ -5,7 +5,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 const useStyles = makeStyles({
   about: {
-    fontSize: "1.25em",
+    fontSize: "1.15em",
     paddingBottom: "50px",
   },
 });
