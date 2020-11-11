@@ -9,8 +9,8 @@ const transport = {
   port: 587,
   secure: false,
   auth: {
-    user: process.env.THE_EMAIL,
-    pass: process.env.THE_PASSWORD,
+    user: process.env.REACT_APP_THE_EMAIL,
+    pass: process.env.REACT_APP_THE_PASSWORD,
   },
 };
 
@@ -28,8 +28,8 @@ transporter.verify((error, success) => {
 sendToMeRouter.post("/", (req, res, next) => {
   //make mailable object
   const mail = {
-    from: process.env.THE_EMAIL,
-    to: process.env.THE_CONTACT,
+    from: process.env.REACT_APP_THE_EMAIL,
+    to: process.env.REACT_APP_THE_CONTACT,
     subject: req.body.reason,
     text: `
       from:
