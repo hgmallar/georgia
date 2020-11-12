@@ -5,8 +5,10 @@ const useStyles = makeStyles({
   header: {
     fontFamily: `'Oxygen', sans-serif`,
     textAlign: "center",
-    marginTop: 15,
-    marginBottom: 15,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingTop: 15,
+    paddingBottom: 15,
   },
 });
 

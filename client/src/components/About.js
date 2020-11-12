@@ -6,14 +6,15 @@ import ListItem from "@material-ui/core/ListItem";
 const useStyles = makeStyles({
   about: {
     fontSize: "1.15em",
-    paddingBottom: "50px",
+    paddingTop: 0,
+    paddingBottom: 0,
   },
 });
 
 export const About = () => {
   const classes = useStyles();
   return (
-    <List className={`left-align ${classes.about}`}>
+    <List className={`left-align ${classes.about} main`}>
       <ListItem>
         HowToVoteGeorgia.com was born out of a desire to help those eligible and
         eager to vote in the State of Georgia runoffs on January 5th, have the

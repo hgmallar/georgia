@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   footer: {
     backgroundColor: "#3C3B6E",
-    position: "fixed",
-    bottom: 0,
+    // position: "fixed",
+    // bottom: 0,
     width: "100%",
     height: "50px",
   },

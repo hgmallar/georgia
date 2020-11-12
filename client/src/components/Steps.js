@@ -51,7 +51,6 @@ const useStyles = makeStyles({
     backgroundColor: "#3C3B6E",
     color: "#EEE",
     textAlign: "center",
-    paddingBottom: "50px",
   },
   tabs: {
     backgroundColor: "#B22234",
@@ -73,7 +72,7 @@ export default function SimpleTabs() {
   };
 
   return (
-    <div className={classes.root}>
+    <div className={`main ${classes.root}`}>
       <AppBar position="static">
         <Tabs
           value={value}

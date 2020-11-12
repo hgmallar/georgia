@@ -11,7 +11,6 @@ import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   contact: {
-    paddingBottom: "50px",
     color: "#EEE",
   },
   form: {
@@ -89,12 +88,12 @@ export const Contact = () => {
   };
 
   return (
-    <div className={classes.contact}>
+    <div className={`main ${classes.contact}`}>
       <form className={classes.form} noValidate autoComplete="off">
         <div>
           <TextField
             className={classes.inputs}
-            id="name"
+            autoComplete="new-password"
             label="Name"
             variant="outlined"
             error={nameErrorText.length === 0 ? false : true}
@@ -108,7 +107,7 @@ export const Contact = () => {
         <div>
           <TextField
             className={classes.inputs}
-            id="email"
+            autoComplete="new-password"
             label="email"
             variant="outlined"
             error={emailErrorText.length === 0 ? false : true}
