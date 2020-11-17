@@ -15,4 +15,4 @@
  * CSS
  * Responsive Material UI design
 
- ![frontpage image](/client/public/georgia.PNG)
+ ![frontpage image](/client/build/georgia.PNG)
