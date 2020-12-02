@@ -35,7 +35,7 @@ const Absentee = () => {
       <h2>
         Request Absentee Ballot: <span className={classes.bold}>NOW</span>
       </h2>
-      <h2>First Day Absentee Ballots are Mailed by Regsitrar: November 18th</h2>
+      <h2>Absentee Ballots are Being Mailed by Regsitrar: NOW</h2>
       <h2>Absentee Ballot Applications Must Be Submitted By: January 1st</h2>
       <h2>Absentee Ballots Must be Received By: January 5th</h2>
       <Link
