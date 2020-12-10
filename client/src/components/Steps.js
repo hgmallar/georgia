@@ -7,7 +7,6 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
-import Register from "./Register";
 import Absentee from "./Absentee";
 import Vote from "./Vote";
 
@@ -81,22 +80,18 @@ export default function SimpleTabs() {
           variant="fullWidth"
           className={classes.tabs}
         >
-          <Tab className={classes.tab} label="Registration" {...a11yProps(0)} />
-          <Tab className={classes.tab} label="Vote By Mail" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="Vote By Mail" {...a11yProps(0)} />
           <Tab
             className={classes.tab}
             label="Vote In Person"
-            {...a11yProps(2)}
+            {...a11yProps(1)}
           />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Register />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         <Absentee />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={1}>
         <Vote />
       </TabPanel>
     </div>
