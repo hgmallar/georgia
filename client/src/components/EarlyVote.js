@@ -32,7 +32,8 @@ const Vote = () => {
 
   return (
     <>
-      <h2>Election Day: January 5th</h2>
+      <h2>Early Voting Begins: NOW</h2>
+      <h2>Early Voting Ends: December 31st</h2>
       <Link
         href="https://www.mvp.sos.ga.gov/MVP/mvp.do"
         target="_blank"
@@ -43,7 +44,7 @@ const Vote = () => {
           color="secondary"
           className={classes.buttons}
         >
-          Find Your Polling Place
+          Find A Polling Place
         </Button>
       </Link>
       <Link
@@ -62,7 +63,9 @@ const Vote = () => {
       <List className="left-align">
         <ListItem>
           <ListItemText>
-            Polling places are open from 7am to 7pm on Election Day.
+            Unlike Election Day, you do not have to vote at an assigned polling
+            location during early voting. You may vote at any early voting
+            location within your county.
           </ListItemText>
         </ListItem>
         <ListItem>
