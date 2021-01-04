@@ -8,7 +8,6 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
 import Absentee from "./Absentee";
-import EarlyVote from "./EarlyVote";
 import Vote from "./Vote";
 
 function TabPanel(props) {
@@ -82,11 +81,10 @@ export default function SimpleTabs() {
           className={classes.tabs}
         >
           <Tab className={classes.tab} label="Vote By Mail" {...a11yProps(0)} />
-          <Tab className={classes.tab} label="Vote Early" {...a11yProps(1)} />
           <Tab
             className={classes.tab}
             label="Vote Election Day"
-            {...a11yProps(2)}
+            {...a11yProps(1)}
           />
         </Tabs>
       </AppBar>
@@ -94,9 +92,6 @@ export default function SimpleTabs() {
         <Absentee />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <EarlyVote />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
         <Vote />
       </TabPanel>
     </div>
