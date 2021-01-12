@@ -7,7 +7,6 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
-import axios from "axios";
 
 const useStyles = makeStyles((theme) => ({
   contact: {
@@ -27,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Contact = () => {
+const Contact = () => {
   const classes = useStyles();
   const [name, setName] = useState("");
   const [nameErrorText, setNameErrorText] = useState("");
@@ -69,21 +68,18 @@ export const Contact = () => {
         setCommentsErrorText("");
       }
     } else {
-      axios.post("/sendtome", {
-        //make an object to be handled from req.body on the backend.
-        email,
-        name,
-        reason,
-        //change the name to represent text on the backend.
-        text: comments,
+      const data = `name=${name}&email=${email}&reason=GEORGIA ${reason}&comments=${comments}`;
+      fetch("https://www.unpopularbaby.com/api/send", {
+        body: data,
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        method: "post",
       });
       setName("");
       setEmail("");
       setReason("OTHER");
       setComments("");
-      setNameErrorText("");
-      setEmailErrorText("");
-      setCommentsErrorText("");
     }
   };
 
