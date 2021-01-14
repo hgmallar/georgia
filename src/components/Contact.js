@@ -77,9 +77,12 @@ const Contact = () => {
         method: "post",
       });
       setName("");
+      setNameErrorText("");
       setEmail("");
+      setEmailErrorText("");
       setReason("OTHER");
       setComments("");
+      setCommentsErrorText("");
     }
   };
 
